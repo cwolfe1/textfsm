@@ -1,0 +1,9 @@
+Value ID (\S+)
+Value NETWORK (\S+)
+Value NETMASK (\S+)
+Value DEVICE (\S+)
+  
+Start
+  ^edit ${ID}
+  ^set dst ${NETWORK} ${NETMASK}
+  ^set device \"${DEVICE}\" -> Record
